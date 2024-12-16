@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiCollectionViewLineIssue.TestPage">
+
+    <!-- Change this auto to anything else to see the problem go away -->
+<Grid ColumnDefinitions="*,*" RowDefinitions="Auto,*">
+    <VerticalStackLayout Grid.Column="0" Grid.Row="0">
+        <Label Text="Test Label" FontSize="22" />
+    </VerticalStackLayout>
+
+    <Grid Grid.Row="1" Grid.Column="1" RowDefinitions="44,*">
+        <BoxView Grid.Row="0" BackgroundColor="Red" />
+        <CollectionView Grid.Row="1" BackgroundColor="Blue" />
+    </Grid>
+</Grid>
+    
+</ContentPage>
