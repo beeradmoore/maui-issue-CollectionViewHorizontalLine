@@ -9,6 +9,7 @@ public partial class MainPage : ContentPage
 
     void Button_OnClicked(object? sender, EventArgs e)
     {
-        App.Current.Windows[0].Page = new TestPage();
+        Navigation.PushAsync(new TestPage());
+        //App.Current.Windows[0].Page = new TestPage();
     }
 }

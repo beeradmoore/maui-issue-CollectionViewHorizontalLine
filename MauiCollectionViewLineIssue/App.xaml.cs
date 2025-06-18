@@ -11,6 +11,6 @@ public partial class App : Application
     {
         // Change this to go directly to the test page to see the issue go away
         //return new Window(new TestPage());
-        return new Window(new MainPage());
+        return new Window(new NavigationPage(new MainPage()));
     }
 }
